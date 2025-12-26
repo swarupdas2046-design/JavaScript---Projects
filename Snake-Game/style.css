@@ -1,3 +1,7 @@
+@font-face {
+  font-family: jola;
+  src: url(./OrangeAvenueDEMO-Regular.otf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -10,9 +14,19 @@ body {
   width: 100%;
 }
 
+@keyframes anything {
+  from {
+    scale: 0.9;
+    opacity: 0;
+  }
+  to {
+    scale: 1.1;
+    opacity: 1;
+  }
+}
 :root {
   --bg-primary-color: #0c0c0c;
-  --bg-fill-color: wheat;
+  --bg-fill-color: lightseagreen;
   --bg-food-color: rgb(224, 11, 139);
   --text-primary-color: #f0f0f0;
   --spacing-xs: 4px;
@@ -50,9 +64,6 @@ main .btn {
 }
 main .btn:hover {
   transform: scale(1.1);
-}
-main .btn:active {
-  scale: 0.95;
 }
 main section {
   height: 100%;
@@ -108,12 +119,47 @@ main section .block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: bisque;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(47, 47, 47);
+  border-radius: var(--border-redius-mid);
+  padding: var(--spacing-md);
   gap: var(--spacing-lg);
+  transition: all linear 5s;
+  box-shadow: 0 0 10px rgb(99, 127, 113);
+  animation: anything 3s forwards alternate;
+}
+.modal .start-game p {
+  font-family: jola;
+  font-weight: 500;
+}
+.modal .start-game .btn-start {
+  margin-bottom: 30px;
+  color: bisque;
+  font-size: 20px;
+  background-color: cadetblue;
 }
 .modal .game-over {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: bisque;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(47, 47, 47);
+  border-radius: var(--border-redius-mid);
+  padding: var(--spacing-md);
   gap: var(--spacing-lg);
+  box-shadow: 0 0 10px rgb(151, 5, 105);
+  animation: anything 3s forwards alternate;
   display: none;
+}
+.modal .game-over p {
+  font-family: jola;
+  font-weight: 500;
+}
+.modal .game-over .btn-restart {
+  margin-bottom: 30px;
+  color: bisque;
+  font-size: 20px;
+  background-color: rgb(220, 7, 138);
 }/*# sourceMappingURL=style.css.map */

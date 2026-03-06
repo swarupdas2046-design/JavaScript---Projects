@@ -19,7 +19,9 @@ let Add = (title,desc,col) => {
   })
 
   let deleteBtn = taskElem.querySelector('button')
-  deleteBtn.addEventListener('click',()=>{
+  deleteBtn.addEventListener('click',()=>{ 
+    let opinion = confirm("Are you sure you want to delete this task?")
+    if(!opinion) return
     taskElem.remove()
     UpdatetaskCount()
   })

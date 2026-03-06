@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>  
+        <nav>
+            <div class="left">Kanban-Board</div>
+            <div class="right"><button id="toggel-modal">Add new Task</button></div>
+        </nav>
+        <section class="board">
+            <div id="todo" class="task-coloumn ">
+                <div class="heading">
+                    <div class="left">To Do</div>
+                    <div class="right">Count</div>
+                </div>
+               
+            </div>
+            <div id="progress" class="task-coloumn">
+                  <div class="heading">
+                    <div class="left">In progress</progress></div>
+                    <div class="right">Count</div>
+                </div>
+            </div>
+            <div id="done" class="task-coloumn ">
+                  <div class="heading">
+                    <div class="left">Done</div>
+                    <div class="right">Count</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal addnew-task">
+            <div class="bg"></div>
+            <div class="center">
+                <input id="task-input-title" type="text" placeholder="Enter Task">
+                <textarea id="task-input-desc" placeholder="Enter description"></textarea>
+                <button id="addnew-task-btn">Add Task</button>
+                <p>Made with ❤️ by Swarup</p>
+            </div>
+        </div>
+        
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

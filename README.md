@@ -12,6 +12,8 @@ Welcome to my repository! This collection features my journey through JavaScript
 | **📋 Kanban Board** | A productivity tool to manage tasks with drag-and-drop functionality and local storage persistence. | JS, LocalStorage, SCSS | [Live Link](https://kanban-board-phi-ashy.vercel.app/) |
 | **✨ Animated Website** | A high-performance modern website featuring smooth scrolling and reveal-on-scroll animations. | GSAP, JS | [Live Link](https://java-script-projects-rfj48wl70-swarup-das-projects-d37e66e5.vercel.app/) |
 
+| **typing test** |   | [Live Link](https://java-script-typing-test.vercel.app/)|
+
 ---
 
 ## 🛠️ Key Features
